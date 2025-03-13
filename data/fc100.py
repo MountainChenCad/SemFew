@@ -22,7 +22,7 @@ Normalize = transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.20
 class DatasetLoader(Dataset):
 
     def __init__(self, setname, train_augmentation=None):
-        DATASET_DIR = 'E:\deeplearning\datasets\FC100'
+        DATASET_DIR = '/datasets/FC100'
         if setname == 'train':
             THE_PATH = osp.join(DATASET_DIR, 'train')
             label_list = os.listdir(THE_PATH)

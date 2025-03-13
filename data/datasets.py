@@ -5,7 +5,7 @@ from PIL import Image
 from torch.utils.data import Dataset
 from torchvision.transforms import transforms
 
-ROOT = 'E:\deeplearning\datasets\miniImageNet\images'
+ROOT = './datasets/miniImageNet/images'
 # ROOT = '/home/scdx/archer/data/images'
 
 class my_dataset(Dataset):

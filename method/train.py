@@ -1,8 +1,6 @@
 import os
 import sys
 
-
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, BASE_DIR)
 
@@ -74,8 +72,8 @@ if __name__ == '__main__':
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     if args.dataset == 'MiniImageNet':
-        args.val = '/path/to/your/miniimagenet/val'
-        args.train = '/path/to/your/miniimagenet/train'
+        args.val = 'datasets/mini-imagenet-sxc/images'
+        args.train = 'datasets/mini-imagenet-sxc/images'
         train_dataset = ImageFolder(args.train, transform=transform_train if args.backbone == 'resnet' else transform_train_224)
         val_dataset = ImageFolder(args.val, transform=transform_val if args.backbone == 'resnet' else transform_val_224)
 
