@@ -1,0 +1,6 @@
+2025-03-14 16:54:59,165 - test.py[line:51] - INFO: {'test_batch': 600, 'shot': 1, 'query': 15, 'test_way': 5, 'center': 'mean', 'seed': 13, 'feat_size': 640, 'semantic_size': 512, 'num_workers': 8, 'mode': 'clip', 'text_type': 'gpt', 'dataset': 'MiniImageNet', 'backbone': 'resnet', 'model_path': './checkpoints/ResNet-MiniImageNet.pth', 'work_dir': 'resnet_MiniImageNet_clip_gpt_mean_1'}
+2025-03-14 16:55:39,826 - test.py[line:51] - INFO: {'test_batch': 600, 'shot': 1, 'query': 15, 'test_way': 5, 'center': 'mean', 'seed': 13, 'feat_size': 640, 'semantic_size': 512, 'num_workers': 8, 'mode': 'clip', 'text_type': 'gpt', 'dataset': 'MiniImageNet', 'backbone': 'resnet', 'model_path': './checkpoints/ResNet-MiniImageNet.pth', 'work_dir': 'resnet_MiniImageNet_clip_gpt_mean_1'}
+2025-03-14 16:55:41,644 - test.py[line:107] - INFO: best epoch: 42 93.695558
+2025-03-14 16:55:41,644 - test.py[line:108] - INFO: best k: 0.000000
+2025-03-14 16:56:47,607 - test.py[line:144] - INFO: max |k:              0.0 |mix acc: 93.18+0.36% |gap: 16.45
+2025-03-14 16:56:47,607 - test.py[line:146] - INFO: ACC:|proto acc: 76.73+0.88% |gen acc: 93.18+0.36%

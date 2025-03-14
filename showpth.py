@@ -27,4 +27,5 @@ def show_pth_keys(file_path):
         else:
             print(f"   Content: {str(value)[:200]}...\n")
 
-show_pth_keys('semantic/imagenet_semantic_clip_gpt.pth')
+# show_pth_keys('semantic/imagenet_semantic_clip_gpt.pth')
+show_pth_keys('center_MiniImageNet_resnet.pth')

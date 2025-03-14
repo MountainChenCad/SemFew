@@ -55,7 +55,7 @@ if __name__ == '__main__':
         args.num_workers = 0
 
     if args.dataset == 'MiniImageNet':
-        args.test = '/path/to/your/miniimagent/test'
+        args.test = './datasets/mini-imagenet-sxc/images'
         test_dataset = ImageFolder(args.test, transform=transform_val if args.backbone == 'resnet' else transform_val_224)
     elif args.dataset == 'FC100':
         args.test = '/path/to/your/fc100/test'
