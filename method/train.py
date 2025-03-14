@@ -78,8 +78,8 @@ if __name__ == '__main__':
         val_dataset = ImageFolder(args.val, transform=transform_val if args.backbone == 'resnet' else transform_val_224)
 
     elif args.dataset == 'FC100':
-        args.val = '/path/to/your/fc100/val'
-        args.train = '/path/to/your/fc100/train'
+        args.val = './datasets/FC1001/val'
+        args.train = './datasets/FC1001/train'
         train_dataset = ImageFolder(args.train, transform=transform_train_cifar if args.backbone == 'resnet' else transform_train_224_cifar)
         val_dataset = ImageFolder(args.val, transform=transform_val_cifar if args.backbone == 'resnet' else transform_val_224_cifar)
 

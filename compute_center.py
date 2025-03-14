@@ -37,9 +37,9 @@ def main():
     
     # train
     if args.dataset == 'MiniImageNet':
-        trainset = ImageFolder('datasets/mini-imagenet-sxc', transform=transform_val if args.backbone == 'resnet' else transform_val_224)
+        trainset = ImageFolder('./datasets/mini-imagenet-sxc', transform=transform_val if args.backbone == 'resnet' else transform_val_224)
     elif args.dataset == 'FC100':
-        trainset = ImageFolder('/path/to/your/fc100/train', transform=transform_val_cifar if args.backbone == 'resnet' else transform_val_224_cifar)
+        trainset = ImageFolder('./datasets/FC1001', transform=transform_val_cifar if args.backbone == 'resnet' else transform_val_224_cifar)
     elif args.dataset == 'CIFAR-FS':
         trainset = ImageFolder('/path/to/your/cifar-fs/train', transform=transform_val_cifar if args.backbone == 'resnet' else transform_val_224_cifar)
     # elif args.dataset == 'TieredImageNet':
